@@ -19,11 +19,3 @@
 .screen-header__icons {
   position: relative;
 }
-
-.badge--sm {
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  bottom: 20px;
-  right: -5px;
-}
