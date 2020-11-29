@@ -7,7 +7,7 @@ body {
 }
 
 .welcome-header {
-  margin: 90px 0px;
+  margin: 60px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,28 @@ body {
 }
 
 .welcome-header__text {
-  width: 70%;
-  opacity: 0.7;
+  width: 80%;
+  opacity: 0.5;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.4);
 }
