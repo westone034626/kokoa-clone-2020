@@ -2,13 +2,7 @@
   margin-top: 25px;
 }
 
-.more-screen .icon-row:last-child .icon-row__icon {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-}
-
-.more-screen .icon-row:last-child .icon-row__icon:nth-child(2) i {
+.more-screen .icon-row:nth-child(3) .icon-row__icon:nth-child(2) i {
   position: relative;
 }
 
