@@ -88,9 +88,9 @@
   height: 200px;
   display: flex;
   justify-content: center;
-  animation: shakeItAnimation 5s linear infinite;
 }
 
 .index__bgImage img {
   max-height: 100%;
+  animation: shakeItAnimation 5s linear infinite;
 }
