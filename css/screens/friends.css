@@ -35,14 +35,14 @@
 }
 
 @keyframes hideSplashScreen {
-  from {
+  0% {
     opacity: 1;
     transform: none;
   }
-  to {
+  100% {
     opacity: 0;
     visibility: hidden;
-    transform: scale(2);
+    transform: scale(0.1);
   }
 }
 
