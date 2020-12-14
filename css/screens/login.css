@@ -6,6 +6,7 @@
   align-items: center;
   font-weight: 600;
   font-family: var(--main-font);
+  color: var(--point-color);
 }
 
 .welcome-header__title {
@@ -33,22 +34,24 @@
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid gray;
   transition: border-color 0.3s ease-in-out;
 }
 
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--point-color);
+  opacity: 0.4;
   font-family: var(--main-font);
 }
 
 #login-form input:focus {
-  border-color: var(--main-color);
+  border-color: var(--point-color);
 }
 
 #login-form input[type="submit"] {
-  background-color: var(--main-color);
-  color: var(--point-color);
+  background-color: var(--point-color);
+  color: var(--main-color);
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
@@ -60,6 +63,7 @@
   color: inherit;
   font-size: 13px;
   font-family: var(--main-font);
+  color: var(--point-color);
 }
 
 .index__bgImage {

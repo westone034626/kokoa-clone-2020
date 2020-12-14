@@ -9,6 +9,8 @@
 .alt-header__title {
   font-size: 25px;
   font-weight: 600;
+  color: var(--point-color);
+  font-family: var(--main-font);
 }
 
 .alt-header__column {

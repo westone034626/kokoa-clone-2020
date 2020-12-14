@@ -1,7 +1,7 @@
 #chat-screen {
   background-color: var(--main-color);
-  height: 100%;
   font-family: var(--main-font);
+  height: 100%;
 }
 
 #chat-screen .alt-header {
