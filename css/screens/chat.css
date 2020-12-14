@@ -102,23 +102,29 @@
 .message__profile {
   border-radius: 50%;
   margin-right: 10px;
-
+  position: relative;
   background-size: cover;
   background-position: center center;
   width: 50px;
   height: 50px;
+  overflow: hidden;
 }
 
 #chatJudy {
-  background-image: url("https://user-images.githubusercontent.com/26649774/102118101-99af3880-3e82-11eb-885d-753246037210.jpg");
+  position: absolute;
+  max-width: 100%;
+  bottom: -15px;
 }
 
 #chatNick {
-  background-image: url("https://user-images.githubusercontent.com/26649774/102118104-99af3880-3e82-11eb-96a2-d0e9232d7ed8.png");
+  position: absolute;
+  max-height: 100%;
+  right: -20px;
 }
 
 #chatYY {
-  background-image: url("https://user-images.githubusercontent.com/26649774/102118100-9916a200-3e82-11eb-8060-d27f6272b627.jpeg");
+  position: absolute;
+  max-width: 100%;
 }
 
 .message-row__content {
