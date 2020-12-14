@@ -1,6 +1,7 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 1100vh;
+  background-color: var(--main-color);
+  height: 100%;
+  font-family: var(--main-font);
 }
 
 #chat-screen .alt-header {
@@ -9,7 +10,12 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  background-color: var(--main-color);
+  color: var(--point-color);
+}
+
+.alt-header__column i {
+  color: var(--point-color);
 }
 
 #chat-screen .status-bar {
@@ -17,9 +23,20 @@
   background-color: #abc1d1;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInFromLeft {
   from {
-    transform: translateY(30px);
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    transform: translateX(60px);
     opacity: 0;
   }
   to {
@@ -33,10 +50,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
+}
+
+.main-chat .message-row:nth-child(2) {
+  animation: fadeInFromLeft 0.8s linear forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.main-chat .message-row:nth-child(3) {
+  animation: fadeInFromLeft 0.8s linear forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.main-chat .message-row:nth-child(4) {
+  animation: fadeInFromLeft 0.8s linear forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.main-chat .message-row:nth-child(5) {
+  animation: fadeInFromLeft 0.8s linear forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.main-chat .message-row--own:last-child {
+  animation: fadeInFromRight 0.8s linear forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
 }
 
 .chat__timestamp {
+  margin-top: 5px;
   color: white;
   background-color: #92a4b2;
   opacity: 0.8;
@@ -52,11 +99,30 @@
   margin-bottom: 25px;
 }
 
-.message-row img {
-  width: 45px;
-  height: 45px;
+.message__profile {
   border-radius: 50%;
   margin-right: 10px;
+
+  background-size: cover;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+}
+
+#chatJudy {
+  background-image: url("/images/chatsJudy.jpg");
+}
+
+#chatNick {
+  background-image: url("/images/chatsNick.png");
+}
+
+#chatYY {
+  background-image: url("/images/chatsGoat.jpeg");
+}
+
+.message-row__content {
+  width: 80%;
 }
 
 .message__info {
@@ -69,6 +135,7 @@
   font-size: 15px;
   margin-bottom: 5px;
   display: block;
+  color: var(--point-color);
 }
 
 .message__bubble {
@@ -83,6 +150,7 @@
 .message__time {
   opacity: 0.7;
   font-size: 12px;
+  color: var(--point-color);
 }
 
 .message-row--own {
