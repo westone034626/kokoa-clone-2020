@@ -37,10 +37,12 @@
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
+    transform: none;
   }
   to {
     opacity: 0;
     visibility: hidden;
+    transform: scale(2);
   }
 }
 
@@ -61,5 +63,6 @@
 }
 
 #splash-screen span {
-  font-size: 10vw;
+  font-size: 8vw;
+  margin-top: 30px;
 }

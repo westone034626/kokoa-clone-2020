@@ -67,11 +67,28 @@
   color: var(--point-color);
 }
 
+@keyframes shakeItAnimation {
+  0% {
+    transform: translateX(-100px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(100px) rotateY(0deg);
+  }
+  51% {
+    transform: translateX(100px) rotateY(180deg);
+  }
+
+  100% {
+    transform: translateX(-100px) rotateY(180deg);
+  }
+}
+
 .index__bgImage {
   margin-top: 20px;
   height: 200px;
   display: flex;
   justify-content: center;
+  animation: shakeItAnimation 5s linear infinite;
 }
 
 .index__bgImage img {
