@@ -37,6 +37,7 @@
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid gray;
   transition: border-color 0.3s ease-in-out;
+  color: var(--point-color);
 }
 
 #login-form input::placeholder {

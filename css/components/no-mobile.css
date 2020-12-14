@@ -13,7 +13,7 @@
   font-size: 5vw;
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 550px) {
   #no-mobile {
     display: none;
   }
