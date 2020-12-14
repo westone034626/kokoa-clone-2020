@@ -7,15 +7,22 @@
 
 .recommended-friends__title {
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--point-color);
 }
 
 .recommended-friends span {
   margin: 81px 0;
   display: block;
   text-align: center;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--point-color);
   font-size: 18px;
+  opacity: 0.5;
+  font-family: var(--main-font);
+}
+
+.open-chat {
+  color: var(--point-color);
+  font-family: var(--main-font);
 }
 
 .open-chat__header {
@@ -33,6 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
 .open-post__title {
