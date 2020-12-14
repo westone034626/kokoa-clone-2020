@@ -31,6 +31,10 @@
   }
 }
 
+.screen-header__icons .fa-cog {
+  color: var(--point-color);
+}
+
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 1s linear infinite;
 }
