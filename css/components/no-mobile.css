@@ -3,7 +3,9 @@
   z-index: 99;
   height: 100vh;
   width: 100vw;
-  background-color: var(--yellow);
+  background-color: var(--main-color);
+  color: var(--point-color);
+  font-family: var(--main-font);
   top: 0;
   display: flex;
   justify-content: center;

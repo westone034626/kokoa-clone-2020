@@ -6,6 +6,16 @@
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+  color: var(--point-color);
+  transition: all 0.5s ease-in-out;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.user-component:hover {
+  box-shadow: 0 0 50px -30px;
+  border: none;
+  outline: 0;
 }
 
 .user-component__avatar {
@@ -13,6 +23,8 @@
   height: 70px;
   border-radius: 40%;
   margin-right: 20px;
+  overflow: hidden;
+  position: relative;
 }
 
 .user-component__title {
@@ -42,12 +54,39 @@
   border-radius: 25px;
 }
 
+.user-component__avatar img[id="main__avatar"] {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.user-component__avatar img[id="channel__dogs"] {
+  max-height: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: -11px;
+}
+
+.user-component__avatar img[id="channel__cats"] {
+  max-height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: -14px;
+}
+
+.user-component__avatar img[id="channel__animals"] {
+  max-height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: -14px;
+}
+
 .user-component__title--not-bold {
   font-weight: 400;
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--point-color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;

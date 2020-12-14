@@ -16,7 +16,7 @@
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
+        <span>75%</span>
         <i class="fas fa-battery-three-quarters"></i>
         <i class="fas fa-bolt"></i>
       </div>
@@ -66,13 +66,11 @@
     <main class="friends-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            class="user-component__avatar user-component__avatar--xl"
-            src="https://avatars0.githubusercontent.com/u/26649774?s=460&u=3550033bece76be74082e829bbb81fc8b5d31e5c&v=4"
-            alt=""
-          />
+          <div class="user-component__avatar user-component__avatar--xl">
+            <img id="main__avatar" src="/images/avatar.jpg" alt="" />
+          </div>
           <div class="user-component__text">
-            <h4 class="user-component__title">Westone034626</h4>
+            <h4 class="user-component__title">Small&Cute puppy</h4>
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
         </div>
@@ -85,14 +83,50 @@
         </div>
         <div class="user-component">
           <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar--sm"
-              src="https://avatars0.githubusercontent.com/u/26649774?s=460&u=3550033bece76be74082e829bbb81fc8b5d31e5c&v=4"
-              alt=""
-            />
+            <div class="user-component__avatar user-component__avatar--sm">
+              <img id="channel__dogs" src="images/channelDogs.jpg" />
+            </div>
             <div class="user-component__text">
               <h4 class="user-component__title user-component__title--not-bold">
-                Channel
+                Dogs
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <div class="user-component__avatar user-component__avatar--sm">
+              <img id="channel__cats" src="images/channelCats.jpg" />
+            </div>
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Cats
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>5</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-component">
+          <div class="user-component__column">
+            <div class="user-component__avatar user-component__avatar--sm">
+              <img id="channel__animals" src="images/channelAnimals.jpg" />
+            </div>
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Animal
               </h4>
             </div>
           </div>
@@ -106,11 +140,11 @@
       </div>
     </main>
     <div id="splash-screen">
-      <i class="fas fa-comment"></i>
+      <i class="fas fa-paw"></i>
     </div>
 
     <div id="no-mobile">
-      <span>Your screen is too big ㅠㅠ</span>
+      <span>화면의 가로길이를 줄여보세요 🐶</span>
     </div>
     <!-- fontawesome -->
     <script
