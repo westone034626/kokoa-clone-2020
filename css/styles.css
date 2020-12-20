@@ -31,6 +31,8 @@ body {
   font-family: var(--main-font);
 }
 
-.main-screen {
-  padding: 0px var(--horizontal-space);
+.main-screen,
+.friends-screen {
+  padding: var(--vertical-space) var(--horizontal-space);
+  padding-top: 0px;
 }
